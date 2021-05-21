@@ -24,7 +24,7 @@ MAKE_HOOK_OFFSETLESS(Player_GetSlidePercentage, float, Il2CppObject* self, Rayca
     if (allowGravMonke)
     {
         reset = false;
-        Vector3 gravity = raycastHit.get_normal() * -9.81;
+        Vector3 gravity = raycastHit.get_normal() * 9.81;
         set_gravity(gravity);
     }
     else if (!reset)
